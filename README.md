@@ -29,4 +29,4 @@ php artisan migrate:schema-mysql dbName --only=table1,table2
 ```
 
 ## Credit
-Thanks to "bruceoutdoors" [original class](https://gist.github.com/bruceoutdoors/9166186).
+Thanks to "bruceoutdoors" [original class](https://gist.github.com/bruceoutdoors/9166186) and "adamkearsley" [for a readme template] (https://github.com/adamkearsley/laravel-convert-migrations)
