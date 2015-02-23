@@ -6,6 +6,18 @@ This command was built upon from the prior work of @Christopher Pitt, @michaeljc
 ## Installation
 1. Copy MigrateMysqlSchemaCommand.php to app\Console\Commands
 2. Add 'App\Console\Commands\MigrateMysqlSchemaCommand' to $commands in app\Console\Kernel.php
+```php
+class Kernel extends ConsoleKernel {
+
+	/**
+	 * The Artisan commands provided by your application.
+	 *
+	 * @var array
+	 */
+	protected $commands = [
+		'App\Console\Commands\MigrateMysqlSchemaCommand',
+	];
+```
 
 ## Usage
 This is a first version for Laravel 5.  dbName is required while --ignore and --only are optional. You can't use only & ignore together.  Choose one, the other, or neither. Running the command will give you line item feedback of the migration files it creates. Once installed you run any of the following 3 scenarios. 
